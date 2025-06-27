@@ -11,7 +11,7 @@
 | Frontend  | React (Vite)                        |
 | Backend   | FastAPI                             |
 | LLM       | Groqs Llama 3b Model      |
-| Deployment| Vercel (frontend), Render (backend) |
+| Deployment| Vercel (frontend), Render (backend) still didn't deployed |
 
 ---
 
