@@ -41,3 +41,5 @@ Next: Set up FastAPI backend and connect to OpenRouter API.
 
 ## Game summary
 There is 5 planets:
+1. Each planet from ascending have different kinda levels, from easy to nightmare.
+2. Planets name are dicided by the LLM itself.
