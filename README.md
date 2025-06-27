@@ -28,7 +28,7 @@ quantum-drift-protocol/
 
 ## 🌌 Game Summary
 
-> Quantum Drift Protocol is a turn-based web game where users interact with alien worlds, solve challenges, and progress through five sci-fi themed planets. Each level is powered by an LLM (Command R+ via OpenRouter), providing dynamic enemy behavior, logic puzzles, and narrative mysteries.
+> Quantum Drift Protocol is a turn-based web game where users interact with alien worlds, solve challenges, and progress through five sci-fi themed planets. Each level is powered by an LLM (Groq Llama-3b Model), providing dynamic enemy behavior, logic puzzles, and narrative mysteries.
 
 ---
 
