@@ -38,3 +38,6 @@ quantum-drift-protocol/
 Next: Set up FastAPI backend and connect to OpenRouter API.
 
 ---
+
+## Game summary
+There is 5 planets:
