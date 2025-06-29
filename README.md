@@ -51,3 +51,11 @@ galaxyquest/
 ---
 
 ## 🚀 Getting Started
+
+### ⚙ Prerequisites
+
+- Node.js (v18+)
+- Python 3.10+
+- MySQL running locally
+
+---
