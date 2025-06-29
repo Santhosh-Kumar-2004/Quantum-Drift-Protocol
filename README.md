@@ -110,3 +110,12 @@ Backend should be running on http://localhost:8000
 POST /prompt – fetches planet intel/scan info
 POST /puzzle – returns a unique puzzle per level
 POST /score (optional) – submits score (if implemented)
+
+---
+
+## 🧩 Puzzle Mechanics
+Countdown timer (30s)
+Submit answer or retry
+Reveal correct answer after failure
+Score stored in localStorage
+Restart & close modal options
