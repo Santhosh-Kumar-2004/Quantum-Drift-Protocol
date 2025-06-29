@@ -158,3 +158,14 @@ This project is licensed under the MIT License.
 Santhosh Kumar
 Built with passion, creativity, and intergalactic energy. 🚀
 Feel free to ⭐ star the repo if you found it interesting!
+
+---
+
+📬 Contact
+GitHub: https://github.com/Santhosh-Kumar-2004
+LinkedIn: https://www.linkedin.com/in/santhoshkumarv12136/
+Email: santhoshkumarv12136@gmail.com
+
+---
+
+
