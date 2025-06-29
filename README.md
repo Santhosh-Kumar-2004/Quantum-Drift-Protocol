@@ -133,3 +133,11 @@ Fully animated transitions
 📸 Screenshots & Video
 ![screenshot](./Quantum Drift Protocol/frontend/quantum-drift-ui/screenshots & vids/QDP project images)
 ![video](https://vimeo.com/1097320189/fbf1c3022c)
+
+---
+
+## 📦 Future Improvements
+Add authentication and user profiles
+Global leaderboard with backend storage
+In-game sound effects and music
+Save completed levels to DB
