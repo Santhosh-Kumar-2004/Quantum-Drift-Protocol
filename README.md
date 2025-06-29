@@ -34,3 +34,16 @@
 
 ## 📁 Project Structure
 
+galaxyquest/
+├── backend/
+│ ├── main.py
+│ ├── models/
+│ ├── routers/
+│ └── schemas/
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── styles/
+│ │ ├── App.jsx
+│ │ └── main.jsx
