@@ -103,3 +103,10 @@ Backend should be running on http://localhost:8000
 | Hard    | Drag & Drop Sorter  | Sort items into the correct order     |
 | Extreme | Space Dodger        | Move the ship to avoid asteroids      |
 | Insane  | Sequence Rush       | Memorize and repeat button sequence   |
+
+--- 
+
+## 🔁 Sample API Routes
+POST /prompt – fetches planet intel/scan info
+POST /puzzle – returns a unique puzzle per level
+POST /score (optional) – submits score (if implemented)
