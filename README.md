@@ -2,12 +2,13 @@
 
 **GalaxyQuest** is a sci-fi themed full-stack web app where users explore planets, decode alien signals, play logic-based games, and complete intelligence puzzles. The project combines frontend mini-games, interactive puzzles, a HUD interface, and stunning UI—all backed by a FastAPI-powered backend and MySQL database.
 
+It took me 2 and half days to finish. 
 ---
 
 ## 🌌 Live Demo
 
-📺 [Your Video Demo Link Here — YouTube, Google Drive, or Loom]
-
+Video demo - https://vimeo.com/1097320189/fbf1c3022c
+Live demo - https://quantum-drift-protocol.vercel.app/
 ---
 
 ## 🧠 Features
