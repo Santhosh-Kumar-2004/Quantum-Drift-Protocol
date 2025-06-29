@@ -10,8 +10,8 @@
 |-----------|-------------------------------------|
 | Frontend  | React (Vite)                        |
 | Backend   | FastAPI                             |
-| LLM       | Groqs Llama 3b Model      |
-| Deployment| Vercel (frontend), Render (backend) still didn't deployed |
+| LLM       | OpenRouter — Cohere Command R+      |
+| Deployment| Vercel (frontend), Render (backend) |
 
 ---
 
@@ -28,7 +28,7 @@ quantum-drift-protocol/
 
 ## 🌌 Game Summary
 
-> Quantum Drift Protocol is a turn-based web game where users interact with alien worlds, solve challenges, and progress through five sci-fi themed planets. Each level is powered by an LLM (Groq Llama-3b Model), providing dynamic enemy behavior, logic puzzles, and narrative mysteries.
+> Quantum Drift Protocol is a turn-based web game where users interact with alien worlds, solve challenges, and progress through five sci-fi themed planets. Each level is powered by an LLM (Command R+ via OpenRouter), providing dynamic enemy behavior, logic puzzles, and narrative mysteries.
 
 ---
 
@@ -38,8 +38,3 @@ quantum-drift-protocol/
 Next: Set up FastAPI backend and connect to OpenRouter API.
 
 ---
-
-## Game summary
-There is 5 planets:
-1. Each planet from ascending have different kinda levels, from easy to nightmare.
-2. Planets name are dicided by the LLM itself.

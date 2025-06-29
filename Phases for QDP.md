@@ -2,7 +2,7 @@
 
 A sci-fi LLM-powered game built using **React.js + FastAPI**, integrated with **OpenRouter** to access advanced, free LLM models. This document outlines the complete roadmap, including setup, backend, frontend, gameplay logic, polish, and submission.
 
---- OPENROUTER_API_KEY=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
+--- 
 
 ## 🌐 LLM Provider: OpenRouter
 
@@ -58,11 +58,11 @@ A sci-fi LLM-powered game built using **React.js + FastAPI**, integrated with **
 ### 🔗 Phase 2 – LLM Integration (FastAPI)
 
 **Sub-Phases:**
-1. Sign up on OpenRouter (get API key)
+1. Sign up on Groq (get API key)
 2. Create `/routers/game.py` with:
    - `POST /prompt` endpoint
    - `GET /start` endpoint
-3. Write prompt templates for:
+3. Write prompt templates for:  
    - Challenge generation
    - Mystery generation
    - Enemy behavior
