@@ -119,3 +119,11 @@ Submit answer or retry
 Reveal correct answer after failure
 Score stored in localStorage
 Restart & close modal options
+
+---
+
+## 🌌 Galaxy Map & Planet UI
+Each planet reveals a unique puzzle and mini-game
+HUD shows score, energy, and mission progress
+Clickable planets in Galaxy Map
+Fully animated transitions
