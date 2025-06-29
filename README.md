@@ -81,3 +81,11 @@ uvicorn main:app --reload
 ---
 
 ## 🌐 Frontend Setup (React)
+
+cd ../frontend
+
+# Install packages
+npm install
+
+# Start dev server
+npm run dev
