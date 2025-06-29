@@ -141,3 +141,8 @@ Add authentication and user profiles
 Global leaderboard with backend storage
 In-game sound effects and music
 Save completed levels to DB
+
+---
+
+## 🧠 Inspiration
+Created for a sci-fi hackathon to challenge players with brain-teasing logic puzzles and interactive mini-games across an alien galaxy.
