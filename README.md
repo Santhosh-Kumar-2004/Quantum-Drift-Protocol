@@ -152,3 +152,9 @@ Created for a sci-fi hackathon to challenge players with brain-teasing logic puz
 ## 📜 License
 This project is licensed under the MIT License.
 
+---
+
+## ✨ Developer
+Santhosh Kumar
+Built with passion, creativity, and intergalactic energy. 🚀
+Feel free to ⭐ star the repo if you found it interesting!
