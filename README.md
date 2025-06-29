@@ -132,4 +132,4 @@ Fully animated transitions
 
 📸 Screenshots & Video
 ![screenshot](./Quantum Drift Protocol/frontend/quantum-drift-ui/screenshots & vids/QDP project images)
-![video](./Quantum Drift Protocol/frontend/quantum-drift-ui/screenshots & vids/)
+![video](https://vimeo.com/1097320189/fbf1c3022c)
