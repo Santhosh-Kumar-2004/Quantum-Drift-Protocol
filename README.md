@@ -89,3 +89,6 @@ npm install
 
 # Start dev server
 npm run dev
+
+Access the app at: http://localhost:5173
+Backend should be running on http://localhost:8000
