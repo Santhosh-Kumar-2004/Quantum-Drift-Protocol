@@ -95,3 +95,11 @@ Backend should be running on http://localhost:8000
 
 --- 
 ## 🎮 Mini-Games by Difficulty Level
+
+| Level   | Game                | Description                           |
+| ------- | ------------------- | ------------------------------------- |
+| Easy    | Rock Paper Scissors | Fun reflex-based selection game       |
+| Medium  | Memory Match        | Flip cards and find the correct pairs |
+| Hard    | Drag & Drop Sorter  | Sort items into the correct order     |
+| Extreme | Space Dodger        | Move the ship to avoid asteroids      |
+| Insane  | Sequence Rush       | Memorize and repeat button sequence   |
