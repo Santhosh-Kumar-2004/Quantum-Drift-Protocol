@@ -1,40 +1,36 @@
-# 🪐 Quantum Drift Protocol
+# 🚀 GalaxyQuest - Interplanetary Intelligence & Puzzle Missions
 
-**Quantum Drift Protocol** is a sci-fi LLM-powered game where players drift through alien dimensions, face logic-based challenges, decode mysteries, and battle strange cosmic entities — all across five planets of increasing difficulty.
-
----
-
-## 🚀 Tech Stack
-
-| Layer     | Technology                         |
-|-----------|-------------------------------------|
-| Frontend  | React (Vite)                        |
-| Backend   | FastAPI                             |
-| LLM       | Groq Llama 3b Model      |
-| Deployment| Vercel (frontend), Render (backend) |
+**GalaxyQuest** is a sci-fi themed full-stack web app where users explore planets, decode alien signals, play logic-based games, and complete intelligence puzzles. The project combines frontend mini-games, interactive puzzles, a HUD interface, and stunning UI—all backed by a FastAPI-powered backend and MySQL database.
 
 ---
 
-## 📂 Project Structure
+## 🌌 Live Demo
 
-quantum-drift-protocol/
-├── backend/ # FastAPI backend
-├── frontend/ # React frontend
-├── README.md # Project overview
-└── phases-of-quantum-drift.md # Full roadmap with phases
-
+📺 [Your Video Demo Link Here — YouTube, Google Drive, or Loom]
 
 ---
 
-## 🌌 Game Summary
+## 🧠 Features
 
-> Quantum Drift Protocol is a turn-based web game where users interact with alien worlds, solve challenges, and progress through five sci-fi themed planets. Each level is powered by an LLM (Command R+ via OpenRouter), providing dynamic enemy behavior, logic puzzles, and narrative mysteries.
+- 🪐 Planet-based exploration interface with background transitions
+- 🎮 5 Mini-Games (from easy to insane level)
+- 🧩 Smart Puzzle System (with timer, retry, and reveal)
+- ⚡ Floating HUD (Health, Energy, Score)
+- 🌠 Galaxy map to navigate between planets
+- 💾 Score saving using `localStorage`
+- 🔐 Backend API using FastAPI + MySQL
+- 🎨 Beautiful Glassmorphism + Neon-based UI
 
 ---
 
-## ✅ Status
+## 🛠 Tech Stack
 
-🟢 Project initialized and in early development.  
-Next: Set up FastAPI backend and connect to OpenRouter API.
+| Frontend       | Backend     | Database | Other         |
+|----------------|-------------|----------|---------------|
+| React.js (Vite) | FastAPI     | MySQL    | UUID, Canvas, LocalStorage |
+| React Router    | Pydantic    | SQLAlchemy | CSS Modules, HTML5 APIs |
 
 ---
+
+## 📁 Project Structure
+
