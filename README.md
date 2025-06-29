@@ -10,7 +10,7 @@
 |-----------|-------------------------------------|
 | Frontend  | React (Vite)                        |
 | Backend   | FastAPI                             |
-| LLM       | OpenRouter — Cohere Command R+      |
+| LLM       | Groq Llama 3b Model      |
 | Deployment| Vercel (frontend), Render (backend) |
 
 ---
