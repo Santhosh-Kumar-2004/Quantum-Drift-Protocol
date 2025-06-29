@@ -127,3 +127,9 @@ Each planet reveals a unique puzzle and mini-game
 HUD shows score, energy, and mission progress
 Clickable planets in Galaxy Map
 Fully animated transitions
+
+---
+
+📸 Screenshots & Video
+![screenshot](./Quantum Drift Protocol/frontend/quantum-drift-ui/screenshots & vids/QDP project images)
+![video](./Quantum Drift Protocol/frontend/quantum-drift-ui/screenshots & vids/)
