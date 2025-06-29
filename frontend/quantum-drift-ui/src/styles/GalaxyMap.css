@@ -1,0 +1,66 @@
+.galaxy-map-container {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  background: radial-gradient(circle at center, #020024 0%, #090979 50%, #000000 100%);
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;   /* 👈 Puts content at top */
+  position: relative;
+}
+
+.galaxy-title {
+  font-size: 2.5rem;
+  color: #00ffd5;
+  text-shadow: 0 0 12px #00ffd577;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.planet-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #ffffff22;
+  box-shadow: 0 0 12px #00ffc855;
+}
+
+.planet-node:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #00ffc8aa;
+}
+
+.planet-circle {
+  background-color: #00ffc8;
+  color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 10px #00ffc8aa;
+}
+
+.planet-node.visited .planet-circle {
+  background-color: #ffaa00;
+  box-shadow: 0 0 14px #ffaa00aa;
+}

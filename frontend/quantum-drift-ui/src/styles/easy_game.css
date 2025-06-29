@@ -1,0 +1,130 @@
+.rps-container {
+  max-width: 680px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: linear-gradient(145deg, rgba(20,20,40,0.6), rgba(10,10,25,0.9));
+  border: 2px solid #00fff755;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #00fff744;
+  backdrop-filter: blur(20px);
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.rps-header h1 {
+  font-size: 2.4rem;
+  color: #00ffe1;
+  text-shadow: 0 0 12px #00ffe1aa;
+  margin-bottom: 0.4rem;
+}
+
+.rps-subtitle {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 1.8rem;
+  font-style: italic;
+}
+
+.rps-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.rps-btn {
+  padding: 1rem 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: radial-gradient(circle at center, #00c9bd88);
+  border: none;
+  color: #111;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 4px 10px #00ffe177;
+}
+
+.rps-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 20px #00ffe1;
+}
+
+.choices-display {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+.choice-box {
+  flex: 1;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid #ffffff22;
+  box-shadow: 0 0 10px #ffffff22;
+  transition: 0.3s;
+  animation: floatUp 3s ease-in-out infinite;
+}
+
+.choice-box h3 {
+  font-size: 1.2rem;
+  color: #ffcc00;
+  margin-bottom: 0.3rem;
+}
+
+.choice-box p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.result-text {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00ffe1;
+  text-shadow: 0 0 8px #00ffe1aa;
+}
+
+.rps-back {
+  margin-top: 2.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: transparent;
+  border: 2px solid #ffffff66;
+  color: #ffffffdd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.rps-back:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 12px #ffffff88;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes floatUp {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}

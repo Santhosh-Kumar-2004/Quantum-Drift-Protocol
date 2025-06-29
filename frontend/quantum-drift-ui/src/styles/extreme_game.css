@@ -1,0 +1,88 @@
+.extreme-container {
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  background: radial-gradient(#000015, #000000);
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.game-title {
+  font-size: 2rem;
+  color: #00ffe0;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #00ffe0aa;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.btn-back {
+  background-color: transparent;
+  color: #00ffe0;
+  border: 1px solid #00ffe0aa;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-back:hover {
+  background-color: #00ffe011;
+  box-shadow: 0 0 8px #00ffe0aa;
+}
+
+.game-space {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  border: 2px dashed #ffffff33;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0a0a1a;
+}
+
+.asteroid {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle at 10px 10px, #ff4444, #880000);
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 20px #ff0000aa;
+  transition: top 0.1s linear;
+}
+
+.game-over {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(10, 10, 30, 0.9);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #ffffff44;
+  text-align: center;
+  z-index: 5;
+}
+
+.game-over button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #00ffe0;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00ffe0aa;
+}

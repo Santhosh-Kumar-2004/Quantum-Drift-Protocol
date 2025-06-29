@@ -1,0 +1,121 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.heading-orange {
+  font-size: 3rem;
+  color: #ff6a00;
+  text-shadow: 0 0 12px #ff6a00cc;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes arrows to far ends */
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  font-size: 4rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.arrow:hover {
+  transform: scale(1.3);
+  color: #ff6a00;
+  text-shadow: 0 0 10px #ff6a00;
+}
+
+.planet-card {
+  width: 320px;
+  padding: 2rem;
+  border-radius: 16px;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.planet-card:hover {
+  box-shadow: 0 0 20px #ff9900aa;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.planet-card.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.glass {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 20px #ff6a00aa;
+}
+
+.planet-preview {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  animation: float 4s ease-in-out infinite;
+}
+
+.planet-name {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  text-shadow: 0 0 8px #ffffff99;
+}
+
+.planet-difficulty {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #ffcc70;
+}
+
+.btn-neon {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff6a00;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ff6a00aa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-neon:hover {
+  background-color: #ff6a00;
+  box-shadow: 0 0 20px #ff6a00cc;
+  transform: scale(1.05);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}

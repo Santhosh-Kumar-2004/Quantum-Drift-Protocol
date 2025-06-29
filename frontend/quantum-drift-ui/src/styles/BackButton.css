@@ -1,0 +1,19 @@
+.back-button {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #00ffe1;
+  color: #00ffe1;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  z-index: 10;
+  transition: all 0.2s ease-in-out;
+}
+
+.back-button:hover {
+  background: #00ffe133;
+  box-shadow: 0 0 10px #00ffe1;
+}

@@ -1,0 +1,124 @@
+.landing-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../assets/space1.png'); /* your space bg image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+}
+
+.landing-title {
+  font-size: 4rem;
+  color: #ff6a00;
+  text-shadow: 0 0 15px #ff6a00cc;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  /* cursor: pointer; */
+}
+
+.landing-title:hover {
+  color: #ffa733;
+  text-shadow: 0 0 20px #ffa733, 0 0 30px #ffa73399;
+  transform: scale(1.03);
+}
+
+.landing-tagline {
+  font-size: 1.3rem;
+  color: #ffffffcc;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.btn-neon {
+  background: transparent;
+  color: #ff6a00;
+  border: 2px solid #ff6a00;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px #ff6a00cc, 0 0 40px #ff6a0033 inset;
+}
+
+.btn-neon:hover {
+  background-color: #ff6a00;
+  color: #000;
+  box-shadow: 0 0 15px #ff6a00, 0 0 30px #ff6a00cc;
+  transform: scale(1.05);
+}
+/* 
+.landing-highlight {
+  color: #ff6a00;
+  font-weight: bold;
+  text-shadow: 0 0 10px #ff6a00cc;
+} */
+.menu-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.btn-subtle {
+  background: transparent;
+  color: #ffffffcc;
+  border: 1px solid #ffffff44;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.btn-subtle:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border-color: #ffffffaa;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes driftStars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 500px;
+  }
+}
+
+body {
+  background-image: url('../assets/space2.png');
+  background-size: cover;
+  background-attachment: fixed;
+  /* animation: driftStars 120s linear infinite; */
+}

@@ -1,0 +1,119 @@
+.drag-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(15, 15, 40, 0.7);
+  border-radius: 16px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 18px #00ffe166;
+}
+
+.drag-title {
+  font-size: 2.4rem;
+  color: #00ffe1;
+  text-shadow: 0 0 10px #00ffe199;
+  margin-bottom: 0.3rem;
+}
+
+.drag-subtitle {
+  color: #ccc;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.drag-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.drag-item {
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid #00ffe1aa;
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  padding: 0.75rem 1.2rem;
+  border-radius: 10px;
+  cursor: grab;
+  box-shadow: 0 0 6px #00ffe1aa;
+  transition: 0.2s ease;
+}
+
+.drag-item:active {
+  cursor: grabbing;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.drag-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.drag-buttons button {
+  padding: 0.6rem 1.3rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: #00ffe122;
+  border: 1.5px solid #00ffe1aa;
+  box-shadow: 0 0 10px #00ffe144;
+  transition: all 0.3s ease;
+}
+
+.drag-buttons button:hover {
+  background: #00ffe1;
+  color: #000;
+  box-shadow: 0 0 15px #00ffe1aa;
+}
+
+.drag-message {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ffc400;
+}
+
+.btn-answer {
+  background: #ffaa00aa;
+  border: 1.5px solid #ffaa00;
+  color: #fff;
+}
+
+.btn-answer:hover {
+  background: #ffaa00;
+  color: #000;
+  box-shadow: 0 0 10px #ffaa00cc;
+}
+
+.answer-section {
+  margin-top: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px dashed #ffaa00aa;
+  backdrop-filter: blur(6px);
+}
+
+.answer-heading {
+  color: #ffaa00;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.correct-list {
+  list-style: none;
+  padding: 0;
+  color: #eee;
+}
+
+.correct-item {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #ffffff22;
+}
