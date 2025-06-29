@@ -1,19 +1,57 @@
 import os
 import httpx
+import json
 from dotenv import load_dotenv
+from fastapi import HTTPException
 
 load_dotenv()
-
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
-async def generate_prompt(type_: str, level: int) -> str:
-    base_prompt = {
-        "challenge": f"Create a unique logic-based challenge for a sci-fi space adventure game at level {level}. Keep it clever and immersive.",
-        "enemy": f"Describe a sci-fi enemy suitable for level {level}. Include its name, powers, and how it threatens the player.",
-        "mystery": f"Create a mysterious sci-fi event or object at level {level}. Make it puzzling and open-ended."
+
+def get_structured_prompt(type_: str, level: int) -> str:
+    prompts = {
+        "challenge": f"""
+You are a game engine for a sci-fi logic-based adventure. Generate a unique challenge for Level {level}.
+
+Return valid JSON only:
+- title
+- description
+- difficulty
+- puzzle_type
+- clues (list)
+- solution
+- fail_message
+""",
+        "enemy": f"""
+You are a sci-fi game designer. Create a unique enemy for Level {level}.
+
+Return valid JSON only:
+- name
+- description
+- abilities (list)
+- weaknesses (list)
+- threat_level
+- encounter_message
+""",
+        "mystery": f"""
+You are a sci-fi world-builder. Design a space mystery for Level {level}.
+
+Return valid JSON only:
+- title
+- location
+- description
+- observations (list)
+- unanswered_questions (list)
+- risks (list)
+- opportunities (list)
+"""
     }
 
-    prompt = base_prompt.get(type_.lower())
+    return prompts.get(type_.lower())
+
+
+async def generate_prompt(type_: str, level: int) -> dict:
+    prompt = get_structured_prompt(type_, level)
     if not prompt:
         raise ValueError("Invalid type. Use 'challenge', 'enemy', or 'mystery'.")
 
@@ -25,7 +63,7 @@ async def generate_prompt(type_: str, level: int) -> str:
     body = {
         "model": "llama3-70b-8192",
         "messages": [
-            {"role": "system", "content": "You are a sci-fi game assistant that outputs immersive, imaginative content."},
+            {"role": "system", "content": "You are a sci-fi game assistant that returns structured JSON only."},
             {"role": "user", "content": prompt}
         ],
         "temperature": 0.8,
@@ -33,12 +71,22 @@ async def generate_prompt(type_: str, level: int) -> str:
     }
 
     async with httpx.AsyncClient() as client:
-        response = await client.post(
-            "https://api.groq.com/openai/v1/chat/completions",
-            headers=headers,
-            json=body
-        )
-        response.raise_for_status()
-        content = response.json()["choices"][0]["message"]["content"]
-        return content
+        for attempt in range(2):  # max 1 retry
+            try:
+                response = await client.post(
+                    "https://api.groq.com/openai/v1/chat/completions",
+                    headers=headers,
+                    json=body,
+                    timeout=15
+                )
+                response.raise_for_status()
+                content = response.json()["choices"][0]["message"]["content"]
 
+                return json.loads(content)
+
+            except (httpx.HTTPStatusError, httpx.TimeoutException) as e:
+                if attempt == 1:
+                    raise HTTPException(status_code=502, detail="LLM service unavailable. Try again.")
+            except json.JSONDecodeError:
+                if attempt == 1:
+                    raise HTTPException(status_code=500, detail="LLM returned invalid JSON.")
