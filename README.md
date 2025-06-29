@@ -47,3 +47,7 @@ galaxyquest/
 │ │ ├── styles/
 │ │ ├── App.jsx
 │ │ └── main.jsx
+
+---
+
+## 🚀 Getting Started
