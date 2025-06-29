@@ -59,3 +59,21 @@ galaxyquest/
 - MySQL running locally
 
 ---
+
+### 🔧 Backend Setup (FastAPI + MySQL)
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/galaxyquest.git
+cd galaxyquest/backend
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Configure DB (inside main.py or use .env file)
+# Run backend server
+uvicorn main:app --reload
