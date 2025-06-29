@@ -77,3 +77,7 @@ pip install -r requirements.txt
 # Configure DB (inside main.py or use .env file)
 # Run backend server
 uvicorn main:app --reload
+```
+---
+
+## 🌐 Frontend Setup (React)
