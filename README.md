@@ -146,3 +146,9 @@ Save completed levels to DB
 
 ## 🧠 Inspiration
 Created for a sci-fi hackathon to challenge players with brain-teasing logic puzzles and interactive mini-games across an alien galaxy.
+
+---
+
+## 📜 License
+This project is licensed under the MIT License.
+
